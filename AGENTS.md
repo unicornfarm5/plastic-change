@@ -29,7 +29,7 @@ greys:
 hex: #CACDD5
 hex: #A3A6B4
 hex: #70727E
-hex: #1C1E23
+hex: #1C1E23 - This is used for all text
 
 ## Code rules
 - The project only uses HTML and CSS
