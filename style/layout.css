@@ -73,7 +73,8 @@
   }
 
   .business-contribution {
-    padding-top: 34px;
+    margin-top: 40px;
+    padding: 34px 8% 64px;
   }
 
   .business-contribution h2 {
