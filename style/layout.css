@@ -17,6 +17,78 @@
 }
 
 @media (max-width: 700px) {
+  .business-page {
+    padding: 32px 8% 70px;
+  }
+
+  .business-subtitle {
+    font-size: 17px;
+    margin-bottom: 28px;
+  }
+
+  .business-hero,
+  .business-contribution-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .business-hero {
+    gap: 0;
+  }
+
+  .business-copy {
+    font-size: 16px;
+  }
+
+  .business-copy-left {
+    order: 1;
+  }
+
+  .business-vest {
+    margin: 4px auto 35px;
+    max-width: 330px;
+    order: 2;
+  }
+
+  .business-logo-callout {
+    font-size: 16px;
+    right: -75px;
+    top: 57%;
+  }
+
+  .business-logo-callout::before {
+    width: 32px;
+  }
+
+  .business-copy-right {
+    order: 3;
+  }
+
+  .business-copy p {
+    margin-bottom: 24px;
+  }
+
+  .business-vest figcaption {
+    font-size: 18px;
+  }
+
+  .business-contribution {
+    padding-top: 34px;
+  }
+
+  .business-contribution h2 {
+    font-size: 24px;
+    margin-bottom: 38px;
+  }
+
+  .business-contribution-content {
+    gap: 10px;
+  }
+
+  .business-impact {
+    width: 100%;
+  }
+
   .footer-content {
     display: flex;
     flex-direction: column;
