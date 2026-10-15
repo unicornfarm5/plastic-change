@@ -141,13 +141,6 @@ body {
   width: 100vw;
 }
 
-.business-contribution h2 {
-  font-size: 28px;
-  font-weight: 400;
-  margin: 0 0 64px;
-  text-align: center;
-}
-
 .business-contribution-content {
   display: grid;
   gap: 54px;
@@ -181,6 +174,14 @@ body {
   padding: 0 12px;
 }
 
+.business-contribution h2 {
+  font-family: "Campton", sans-serif;
+  font-weight: 600;
+  margin: 0 0 64px;
+  font-size: 28px;
+  text-align: center;
+}
+
 .business-amount-field span {
   flex: 1;
 }
@@ -211,6 +212,107 @@ body {
 .business-button:focus-visible {
   background: #d90042;
   color: #fff;
+}
+
+.business-partners {
+  background: #fff;
+  margin-left: calc(50% - 50vw);
+  padding: 64px 8% 90px;
+  width: 100vw;
+}
+
+.business-partners h2,
+.business-information h2 {
+  color: #1c1e23;
+  font-family: "Campton", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 42px;
+  text-align: center;
+}
+
+.business-logo-grid {
+  align-items: center;
+  display: grid;
+  gap: 42px 54px;
+  grid-template-columns: repeat(4, minmax(100px, 150px));
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.business-logo-grid img {
+  height: 72px;
+  max-width: 150px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.business-information {
+  background: #f7f8fa;
+  margin-left: calc(50% - 50vw);
+  padding: 54px 8% 86px;
+  width: 100vw;
+}
+
+.business-information h2 {
+  margin-bottom: 48px;
+}
+
+.business-information-card {
+  background: #fff;
+  border: 1px solid #e7e8eb;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(28, 30, 35, 0.04);
+  margin: 0 auto;
+  max-width: 760px;
+  padding: 18px 24px 24px;
+}
+
+.business-information-card summary {
+  color: #1c1e23;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  list-style: none;
+  padding-right: 24px;
+  position: relative;
+}
+
+.business-information-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.business-information-card summary::after {
+  color: var(--accent);
+  content: "⌄";
+  font-size: 17px;
+  position: absolute;
+  right: 0;
+  top: -5px;
+}
+
+.business-information-card:not([open]) summary::after {
+  transform: rotate(-90deg);
+}
+
+.business-information-text {
+  color: #70727e;
+  font-size: 12px;
+  line-height: 1.45;
+  padding-top: 14px;
+}
+
+.business-information-text p {
+  margin: 0 0 20px;
+}
+
+.business-information-text p:last-child {
+  margin-bottom: 0;
+}
+
+.business-information-text a {
+  color: var(--accent);
 }
 
 a {

@@ -90,6 +90,37 @@
     width: 100%;
   }
 
+  .business-partners {
+    padding: 48px 8% 64px;
+  }
+
+  .business-partners h2,
+  .business-information h2 {
+    font-size: 24px;
+    margin-bottom: 34px;
+  }
+
+  .business-logo-grid {
+    gap: 28px 18px;
+    grid-template-columns: repeat(2, minmax(100px, 150px));
+  }
+
+  .business-logo-grid img {
+    height: 62px;
+  }
+
+  .business-information {
+    padding: 42px 8% 60px;
+  }
+
+  .business-information h2 {
+    margin-bottom: 30px;
+  }
+
+  .business-information-card {
+    padding: 16px 18px 20px;
+  }
+
   .footer-content {
     display: flex;
     flex-direction: column;
