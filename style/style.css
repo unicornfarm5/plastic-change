@@ -126,7 +126,7 @@ address {
   gap: 11px;
 }
 
-.footer-column li img {
+.footer-action-icon {
   height: 15px;
   object-fit: contain;
   width: 18px;
@@ -134,12 +134,12 @@ address {
 
 .footer-column li a:hover .icon-heart,
 .footer-column li a:focus-visible .icon-heart {
-  content: url("../assets/icons/red-heart.png");
+  content: url("../assets/icons/footer/red-heart.png");
 }
 
 .footer-column li a:hover .icon-member,
 .footer-column li a:focus-visible .icon-member {
-  content: url("../assets/icons/red-bliv-medlem.png");
+  content: url("../assets/icons/footer/red-bliv-medlem.png");
 }
 
 .footer-information li {
@@ -155,27 +155,14 @@ address {
 
 .social-links a {
   align-items: center;
-  color: var(--footer-text);
   display: inline-flex;
-  font-size: 20px;
-  font-weight: 700;
   height: 24px;
   justify-content: center;
-  min-width: 19px;
+  width: 24px;
 }
 
-.social-links a:nth-child(2) {
-  font-size: 15px;
-}
-
-.social-links a:nth-child(3) {
-  font-size: 19px;
-}
-
-.social-links a:nth-child(4) {
-  font-size: 13px;
-}
-
-.social-links a:nth-child(5) {
-  font-size: 25px;
+.social-links img {
+  height: 20px;
+  object-fit: contain;
+  width: 20px;
 }
