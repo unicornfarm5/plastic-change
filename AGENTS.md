@@ -21,6 +21,7 @@ The project case is a campaign for NGO Plastic Change.
 - for P - use rubrik Rubik Light
 - use Rubik sometimes when there is another color behind the text or when it is very small like image-description.
 - On buttons use Rubik in Semibold
+- Footer: uses rubik
 
 ## Colors
 - accent color like in logo hex: #FF1054
