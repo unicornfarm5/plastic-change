@@ -325,6 +325,148 @@ a:focus-visible {
   color: var(--accent);
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.business-registration {
+  display: grid;
+  gap: 72px;
+  grid-template-columns: minmax(280px, 1fr) minmax(280px, 1fr);
+  margin: 0 auto;
+  max-width: 835px;
+  min-height: 545px;
+  padding: 42px 62px 44px;
+}
+
+.business-registration-form {
+  padding-top: 1px;
+}
+
+.business-registration-form h1 {
+  color: #1c1e23;
+  font-family: "Campton", sans-serif;
+  font-size: clamp(22px, 2.5vw, 28px);
+  line-height: 1.1;
+  margin: 0 0 28px;
+  white-space: nowrap;
+}
+
+.business-registration-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.business-registration-form label {
+  color: #1c1e23;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.business-registration-form input {
+  border: 1px solid #cacdd5;
+  border-radius: 7px;
+  color: #1c1e23;
+  font: inherit;
+  height: 42px;
+  margin-bottom: 16px;
+  padding: 0 9px;
+  width: 100%;
+}
+
+.business-registration-form input::placeholder {
+  color: #cacdd5;
+}
+
+.business-registration-form input:focus {
+  border-color: var(--accent);
+  outline: 2px solid rgba(255, 16, 84, 0.18);
+}
+
+.business-registration-amount {
+  align-items: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 84px 1fr;
+  margin-top: 16px;
+}
+
+.business-registration-amount label {
+  margin: 0;
+}
+
+.business-registration-amount input {
+  margin: 0;
+}
+
+.business-registration-amount span {
+  color: #1c1e23;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.business-registration-form button {
+  background: var(--accent);
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font: 600 22px "Rubik", sans-serif;
+  height: 55px;
+  margin-top: 37px;
+  width: 100%;
+}
+
+.business-registration-form button:hover,
+.business-registration-form button:focus-visible {
+  background: #d90042;
+}
+
+.business-registration-visual {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.business-registration-visual figure {
+  margin: 0 auto;
+  max-width: 280px;
+  position: relative;
+}
+
+.business-registration-visual figure img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.business-registration-logo-callout {
+  background: var(--accent);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 9px;
+  position: absolute;
+  right: 17%;
+  top: 68%;
+}
+
+.business-registration-visual > p {
+  background: #dedede;
+  border-radius: 6px;
+  color: #1c1e23;
+  font-size: 14px;
+  line-height: 1.25;
+  margin: 16px auto 0;
+  max-width: 262px;
+  padding: 17px 10px;
+}
+
 .site-footer {
   background: #fff;
   border-top: 1px solid #e7e8eb;
