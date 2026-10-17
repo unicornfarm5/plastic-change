@@ -1,0 +1,341 @@
+/* har lavet en ny css fil til indexsiden, da det var sådan jeg lærte det på guldbergsgade.
+Jeg turde ikke gøre/ændre noget i styles/layout css var bange for at ødelægge noget (ked af det smiley)*/
+
+/*Header*/
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.header-logo {
+  display: block;
+  width: 180px;
+  flex-shrink: 0;
+}
+
+.header-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.main-nav a {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  color: #ff1054;
+}
+
+.support-button {
+  background: #ff1054;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 600;
+}
+
+/*Heroen på index siden*/
+.hero {
+  min-height: 680px;
+  background:
+    linear-gradient(rgba(0, 40, 90, 0.15), rgba(0, 15, 55, 0.65)),
+    url("../assets/img/heroindex.png") center / cover no-repeat;
+  color: white;
+  display: flex;
+  align-items: stretch;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 140px 5% 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(48px, 7vw, 110px);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -3px;
+  margin: 30px 0;
+}
+
+.hero-bottom h2 {
+  font-size: 28px;
+  margin-bottom: 28px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.pink-button {
+  display: inline-block;
+  background: #ff1054;
+  color: white;
+  padding: 16px 45px;
+  min-width: 200px;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.pink-button:hover,
+.support-button:hover {
+  background: #d90042;
+  color: white;
+}
+
+/*Globus i hero teksten*/
+.globe-letter {
+  display: inline-block;
+  width: 0.85em;
+  height: 0.85em;
+  vertical-align: -0.04em;
+}
+
+.globe-letter img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*Indhold til selve siden, så billeder og tekst*/
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 6%;
+}
+
+.content-section {
+  padding: 90px 0;
+  background: white;
+}
+
+.content-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+
+.content-row:last-child {
+  margin-bottom: 0;
+}
+
+.content-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.content-text {
+  color: #1c1e23;
+}
+
+.content-text h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+.content-text p {
+  font-size: 16px;
+  line-height: 1.65;
+  margin: 0 0 20px;
+}
+
+.highlight-text {
+  font-weight: 700;
+  font-style: italic;
+}
+
+/*World cleanup day hver dag afsnit og hvem er plastic change */
+.everyday-section {
+  background: #f6f6f6;
+  padding: 90px 0;
+}
+
+.everyday-section h2 {
+  color: #1c1e23;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.everyday-section p {
+  max-width: 900px;
+  color: #1c1e23;
+  line-height: 1.7;
+}
+
+/*Typografi ud fra agents dimsen hihi*/
+.hero h1 {
+  font-family: "Campton", sans-serif;
+  font-weight: 600;
+}
+
+.content-text h2,
+.about-section h2,
+.hero-bottom h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+}
+
+.content-text p,
+.everyday-section p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+
+.pink-button,
+.support-button {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+}
+
+/*Responsiv hvis det skulle med? me confused me dont know but works on tablet and mobile and computer ofc*/
+@media (max-width: 900px) {
+  .header-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .header-logo {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .support-button {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .main-nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .content-row {
+    gap: 40px;
+  }
+
+  .hero-buttons {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-content {
+    padding: 18px 5%;
+    gap: 20px;
+  }
+
+  .header-logo {
+    width: 150px;
+  }
+
+  .main-nav {
+    gap: 12px 20px;
+  }
+
+  .main-nav a {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .support-button {
+    padding: 10px 18px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .hero {
+    min-height: 650px;
+  }
+
+  .hero-content {
+    padding: 190px 5% 35px;
+  }
+
+  .hero h1 {
+    font-size: clamp(32px, 8vw, 60px);
+    letter-spacing: -1px;
+  }
+
+  .hero-bottom {
+    width: 100%;
+  }
+
+  .hero-bottom h2 {
+    font-size: 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .pink-button {
+    width: 100%;
+    max-width: 280px;
+    min-width: 0;
+  }
+
+  .content-section,
+  .everyday-section {
+    padding: 60px 0;
+  }
+
+  .content-row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 65px;
+  }
+
+  .content-text h2 {
+    font-size: 23px;
+  }
+
+  .about-section {
+    padding: 65px 0;
+  }
+}
