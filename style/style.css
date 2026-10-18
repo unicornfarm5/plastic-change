@@ -652,3 +652,16 @@ address {
   padding: 10px 25px;
   font-weight: 600;
 }
+
+.subpage .site-header {
+  background: #fff;
+  position: relative;
+}
+
+.subpage .main-nav a {
+  color: #1c1e23;
+}
+
+.subpage .main-nav a:hover {
+  color: #ff1054;
+}
