@@ -1,61 +1,6 @@
 /* har lavet en ny css fil til indexsiden, da det var sådan jeg lærte det på guldbergsgade.
 Jeg turde ikke gøre/ændre noget i styles/layout css var bange for at ødelægge noget (ked af det smiley)*/
 
-/*Header*/
-.site-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-}
-
-.header-content {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 24px 5%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.header-logo {
-  display: block;
-  width: 180px;
-  flex-shrink: 0;
-}
-
-.header-logo img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.main-nav {
-  display: flex;
-  align-items: center;
-  gap: 36px;
-}
-
-.main-nav a {
-  color: white;
-  font-size: 15px;
-  font-weight: 500;
-}
-
-.main-nav a:hover {
-  color: #ff1054;
-}
-
-.support-button {
-  background: #ff1054;
-  color: white;
-  border-radius: 30px;
-  padding: 10px 25px;
-  font-weight: 600;
-}
-
 /*Heroen på index siden*/
 .hero {
   min-height: 680px;
