@@ -132,7 +132,9 @@ Jeg turde ikke gøre/ændre noget i styles/layout css var bange for at ødelægg
   background: #f6f6f6;
   padding: 90px 0;
 }
-
+#om-os {
+  background-color: #ffffff;
+}
 .everyday-section h2 {
   color: #1c1e23;
   font-size: 28px;
