@@ -28,7 +28,7 @@
         <div class="school-hero-image"></div>
         <section class="school-registration-card" aria-labelledby="school-registration-title">
           <h1 id="school-registration-title">Tilmeld din klasse her</h1>
-          <form action="tak-side.html" method="post">
+          <form action="#school-registration-success" method="get">
             <label for="school-name">Skolens navn</label>
             <input id="school-name" name="school-name" type="text" placeholder="Fx Søndermarkskolen" required />
 
@@ -77,6 +77,14 @@
 
           <h2>Tidligere klasser</h2>
           <img src="../assets/img/indexboern.png" alt="Børn deltager i en oprydning" />
+        </div>
+      </section>
+
+      <section class="school-success-popup" id="school-registration-success" aria-labelledby="school-success-title">
+        <div class="school-success-popup-content">
+          <h2 id="school-success-title">Tak for din tilmelding</h2>
+          <p>Tjek din mail for bekræftelse.</p>
+          <a class="school-success-close" href="#">Luk</a>
         </div>
       </section>
     </main>
