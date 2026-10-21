@@ -756,7 +756,7 @@ address {
 .school-calendar {
   border: 1px solid #cacdd5;
   border-radius: 5px;
-  margin: 0;
+  margin: 10px 0 0;
   padding: 15px 16px 17px;
 }
 
@@ -780,7 +780,7 @@ address {
   background: #fff;
   border: 1px solid #cacdd5;
   border-radius: 5px;
-  color: #a3a6b4;
+  color: #70727E;
   cursor: pointer;
   font: inherit;
   height: 30px;
@@ -828,6 +828,27 @@ address {
   margin: 0 0 27px;
 }
 
+.school-supplies {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin: -8px 0 31px;
+}
+
+.school-supply {
+  align-items: center;
+  color: #1c1e23;
+  display: flex;
+  font-size: 16px;
+  gap: 10px;
+}
+
+.school-supply img {
+  height: 44px;
+  object-fit: contain;
+  width: 44px;
+}
+
 .school-information p {
   color: #1c1e23;
   font-size: 16px;
@@ -840,6 +861,11 @@ address {
   height: 176px;
   object-fit: cover;
   width: 235px;
+}
+
+.school-information .school-supply img {
+  height: 44px;
+  width: 44px;
 }
 
 .school-success-popup {
@@ -919,6 +945,12 @@ address {
   .school-information img {
     height: auto;
     width: 100%;
+  }
+
+  .school-supplies {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
   }
 }
 
