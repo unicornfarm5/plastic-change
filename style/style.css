@@ -666,6 +666,294 @@ address {
   color: #ff1054;
 }
 
+.school-page {
+  background: #fff;
+  color: #1c1e23;
+}
+
+.school-header {
+  background: transparent;
+  position: absolute;
+}
+
+.school-header .main-nav a {
+  color: #fff;
+}
+
+.school-header .main-nav a:hover {
+  color: #ff1054;
+}
+
+.school-hero {
+  min-height: 510px;
+  position: relative;
+}
+
+.school-hero-image {
+  background:
+    linear-gradient(rgba(0, 40, 90, 0.08), rgba(0, 15, 55, 0.24)),
+    url("../assets/img/tilmeld-skole-hero.png") center / cover no-repeat;
+  height: 345px;
+}
+
+.school-registration-card {
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-shadow: 0 5px 14px rgba(28, 30, 35, 0.14);
+  padding: 0 7px 14px;
+  position: absolute;
+  right: max(4%, calc((100% - 1200px) / 2));
+  top: 114px;
+  width: min(373px, 42%);
+  z-index: 1;
+}
+
+.school-registration-card h1 {
+  background: var(--accent);
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+  font-family: "Campton", sans-serif;
+  font-size: 25px;
+  margin: 0 -7px 10px;
+  padding: 21px 12px 17px;
+  text-align: center;
+}
+
+.school-registration-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.school-registration-card label,
+.school-calendar legend {
+  color: #1c1e23;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.school-registration-card input {
+  border: 1px solid #cacdd5;
+  border-radius: 5px;
+  color: #1c1e23;
+  font: inherit;
+  height: 38px;
+  margin-bottom: 14px;
+  padding: 0 7px;
+  width: 100%;
+}
+
+.school-registration-card input::placeholder {
+  color: #a3a6b4;
+}
+
+.school-registration-card input:focus,
+.calendar-grid button:focus-visible {
+  border-color: var(--accent);
+  outline: 2px solid rgba(255, 16, 84, 0.18);
+}
+
+.school-calendar {
+  border: 1px solid #cacdd5;
+  border-radius: 5px;
+  margin: 10px 0 0;
+  padding: 15px 16px 17px;
+}
+
+.school-calendar legend {
+  padding: 0;
+}
+
+.calendar-month {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 0 12px;
+}
+
+.calendar-grid {
+  display: grid;
+  gap: 7px;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.calendar-grid button {
+  background: #fff;
+  border: 1px solid #cacdd5;
+  border-radius: 5px;
+  color: #70727E;
+  cursor: pointer;
+  font: inherit;
+  height: 30px;
+  padding: 0;
+}
+
+.calendar-grid button:hover {
+  background-color: #b6d98d !important;
+  border-color: #b6d98d !important;
+  color: #1c1e23 !important;
+}
+
+.school-submit {
+  align-self: flex-start;
+  background: var(--accent);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font: 600 16px "Rubik", sans-serif;
+  margin-top: 19px;
+  padding: 6px 29px;
+}
+
+.school-submit:hover,
+.school-submit:focus-visible {
+  background: #d90042;
+}
+
+.school-information {
+  min-height: 500px;
+  margin-top: -85px;
+  padding: 12px max(4%, calc((100% - 1200px) / 2));
+}
+
+.school-information-copy {
+  max-width: 560px;
+  padding-left: 0;
+}
+
+.school-information h2 {
+  color: #1c1e23;
+  font-family: "Campton", sans-serif;
+  font-size: 22px;
+  margin: 0 0 27px;
+}
+
+.school-supplies {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin: -8px 0 31px;
+}
+
+.school-supply {
+  align-items: center;
+  color: #1c1e23;
+  display: flex;
+  font-size: 16px;
+  gap: 10px;
+}
+
+.school-supply img {
+  height: 44px;
+  object-fit: contain;
+  width: 44px;
+}
+
+.school-information p {
+  color: #1c1e23;
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 0 0 31px;
+}
+
+.school-information img {
+  display: block;
+  height: 176px;
+  object-fit: cover;
+  width: 235px;
+}
+
+.school-information .school-supply img {
+  height: 44px;
+  width: 44px;
+}
+
+.school-success-popup {
+  align-items: center;
+  background: rgba(28, 30, 35, 0.45);
+  display: none;
+  inset: 0;
+  justify-content: center;
+  padding: 24px;
+  position: fixed;
+  z-index: 20;
+}
+
+.school-success-popup:target {
+  display: flex;
+}
+
+.school-success-popup-content {
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 14px rgba(28, 30, 35, 0.22);
+  color: #1c1e23;
+  max-width: 390px;
+  padding: 34px 30px 28px;
+  text-align: center;
+  width: 100%;
+}
+
+.school-success-popup h2 {
+  font-family: "Campton", sans-serif;
+  font-size: 26px;
+  margin: 0 0 12px;
+}
+
+.school-success-popup p {
+  margin: 0 0 24px;
+}
+
+.school-success-close {
+  background: var(--accent);
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  padding: 8px 27px;
+}
+
+.school-success-close:hover,
+.school-success-close:focus-visible {
+  background: #d90042;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .school-hero {
+    min-height: 0;
+  }
+
+  .school-hero-image {
+    height: 280px;
+  }
+
+  .school-registration-card {
+    margin: -70px 6% 0;
+    position: relative;
+    right: auto;
+    top: auto;
+    width: auto;
+  }
+
+  .school-information {
+    margin-top: 0;
+    padding: 45px 8% 65px;
+  }
+
+  .school-information img {
+    height: auto;
+    width: 100%;
+  }
+
+  .school-supplies {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
 .maintak {
   margin-top: 10rem;
 }

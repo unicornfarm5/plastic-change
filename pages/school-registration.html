@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tilmeld din klasse | Plastic Change</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/layout.css" />
+    <link rel="stylesheet" href="../style/index.css" />
+  </head>
+  <body class="school-page">
+    <header class="site-header school-header">
+      <div class="header-content">
+        <a href="index.html" class="header-logo">
+          <img src="../assets/logos/Plastic-change-logo.png" alt="Plastic Change logo" />
+        </a>
+        <nav class="main-nav" aria-label="Hovednavigation">
+          <a href="index.html#problemet">Forstå problemet</a>
+          <a href="index.html#world-cleanup-day">Vær med</a>
+          <a href="index.html#om-os">Foreningen</a>
+        </nav>
+        <a href="index.html#stoet" class="support-button">♥ Støt</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="school-hero" aria-label="Tilmeld din klasse">
+        <div class="school-hero-image"></div>
+        <section class="school-registration-card" aria-labelledby="school-registration-title">
+          <h1 id="school-registration-title">Tilmeld din klasse her</h1>
+          <form action="#school-registration-success" method="get">
+            <label for="school-name">Skolens navn</label>
+            <input id="school-name" name="school-name" type="text" placeholder="Fx Søndermarkskolen" required />
+
+            <label for="class-level">Klassetrin</label>
+            <input id="class-level" name="class-level" type="text" placeholder="Fx 5. klasse" required />
+
+            <label for="student-count">Antal elever</label>
+            <input id="student-count" name="student-count" type="number" min="1" placeholder="Fx 24 elever" required />
+
+            <label for="teacher-email">E-mail</label>
+            <input id="teacher-email" name="teacher-email" type="email" placeholder="anna@skole.dk" required />
+
+            <label for="teacher-name">Lærerens navn</label>
+            <input id="teacher-name" name="teacher-name" type="text" placeholder="Anna Jensen" required />
+
+            <fieldset class="school-calendar">
+              <legend>Ønsket dato for besøget</legend>
+              <div class="calendar-month">November 2026</div>
+              <div class="calendar-grid" aria-label="Vælg dato">
+                <button type="button">1</button>
+                <button type="button">2</button><button type="button">3</button><button type="button">4</button>
+                <button type="button">5</button><button type="button">6</button><button type="button">7</button>
+                <button type="button">8</button><button type="button">9</button><button type="button">10</button>
+                <button type="button">11</button><button type="button">12</button><button type="button">13</button>
+                <button type="button">14</button><button type="button">15</button><button type="button">16</button>
+                <button type="button">17</button><button type="button">18</button><button type="button">19</button>
+                <button type="button">20</button><button type="button">21</button><button type="button">22</button>
+                <button type="button">23</button><button type="button">24</button><button type="button">25</button>
+                <button type="button">26</button><button type="button">27</button><button type="button">28</button>
+                <button type="button">29</button><button type="button">30</button>
+              </div>
+            </fieldset>
+
+            <button class="school-submit" type="submit">Book</button>
+          </form>
+        </section>
+      </section>
+
+      <section class="school-information">
+        <div class="school-information-copy">
+          <h2>Hvad DU skal sørge for</h2>
+          <div class="school-supplies">
+            <div class="school-supply">
+              <img src="../assets/icons/pose.png" alt="" />
+              <span>Poser til affaldet</span>
+            </div>
+            <div class="school-supply">
+              <img src="../assets/icons/handsker.png" alt="" />
+              <span>Evt. handsker eller andet udstyr</span>
+            </div>
+          </div>
+
+          <h2>Hvad VI sørger for</h2>
+          <p>Vi sørger for veste til det tilmelde antal børn, sørg for at tilmelde den korrekte mængde</p>
+          <p>Vi sender størrelser tilsvarende klassetrinnet, og med en stor andel i større størrelser så alle kan passe</p>
+
+          </div>
+      </section>
+
+      <section class="school-success-popup" id="school-registration-success" aria-labelledby="school-success-title">
+        <div class="school-success-popup-content">
+          <h2 id="school-success-title">Tak for din tilmelding</h2>
+          <p>Tjek din mail for bekræftelse.</p>
+          <a class="school-success-close" href="#">Luk</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <section class="footer-contact" aria-label="Kontaktoplysninger">
+          <a class="footer-logo" href="index.html" aria-label="Plastic Change forside">
+            <img src="../assets/logos/Plastic-change-logo.png" alt="Plastic Change" />
+          </a>
+          <address>
+            <p>Mail. <a href="mailto:info@plasticchange.org">info@plasticchange.org</a></p>
+            <p>Tlf. <a href="tel:+4542667246">+45 42 66 72 46</a></p>
+          </address>
+          <p class="footer-spaced">Telefontid: Tirsdag 9-12</p>
+          <div class="footer-meta">
+            <p>Website af <a href="#">Savage Studio</a></p>
+            <p>&copy; 2026 Plastic Change</p>
+          </div>
+        </section>
+        <nav class="footer-column" aria-labelledby="school-about-heading">
+          <h2 id="school-about-heading">Om os</h2>
+          <ul>
+            <li><a href="#">Foreningen Plastic Change</a></li>
+            <li><a href="#">Sådan arbejder vi</a></li>
+            <li><a href="#">Regnskab &amp; vedtægter</a></li>
+            <li><a href="#">Presse</a></li>
+            <li><a href="#">Kontakt os</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-column" aria-labelledby="school-support-heading">
+          <h2 id="school-support-heading">Støt vores arbejde</h2>
+          <ul>
+            <li><a href="#">♥ Giv et bidrag</a></li>
+            <li><a href="#">♥ Bliv medlem</a></li>
+            <li><a href="#">♥ Lav et testamente</a></li>
+            <li><a href="#">♥ Støt som virksomhed</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-column footer-information" aria-labelledby="school-information-heading">
+          <h2 id="school-information-heading">Praktisk information</h2>
+          <ul>
+            <li><a href="#">CVR. 35778985</a></li>
+            <li><a href="#">Konto. 8411 0002039618</a></li>
+            <li><a href="#">MobilePay. 304961</a></li>
+            <li><a href="#">SWIFT. FAELDKK1</a></li>
+            <li><a href="#">Privatlivspolitik</a></li>
+            <li><a href="#">Betalingspolitik</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
