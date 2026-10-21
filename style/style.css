@@ -425,9 +425,28 @@ a:focus-visible {
   width: 100%;
 }
 
+.business-registration-confirm {
+  align-items: center;
+  background: var(--accent);
+  border-radius: 6px;
+  color: #fff;
+  display: flex;
+  font: 600 22px "Rubik", sans-serif;
+  height: 55px;
+  justify-content: center;
+  margin-top: 37px;
+  width: 100%;
+}
+
 .business-registration-form button:hover,
 .business-registration-form button:focus-visible {
   background: #d90042;
+}
+
+.business-registration-confirm:hover,
+.business-registration-confirm:focus-visible {
+  background: #d90042;
+  color: #fff;
 }
 
 .business-registration-visual {
