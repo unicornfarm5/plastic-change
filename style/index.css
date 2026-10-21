@@ -46,6 +46,7 @@ Jeg turde ikke gøre/ændre noget i styles/layout css var bange for at ødelægg
 .pink-button {
   display: inline-block;
   background: #ff1054;
+  border: 1px solid #fff;
   color: white;
   padding: 16px 45px;
   min-width: 200px;
