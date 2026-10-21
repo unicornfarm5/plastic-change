@@ -786,11 +786,10 @@ address {
   padding: 0;
 }
 
-.calendar-grid button:hover,
-.calendar-grid button.is-selected {
-  background: #b6d98d;
-  border-color: #b6d98d;
-  color: #1c1e23;
+.calendar-grid button:hover {
+  background-color: #b6d98d !important;
+  border-color: #b6d98d !important;
+  color: #1c1e23 !important;
 }
 
 .school-submit {
@@ -812,7 +811,7 @@ address {
 
 .school-information {
   min-height: 500px;
-  padding: 22px max(4%, calc((100% - 1200px) / 2));
+  padding: 12px max(4%, calc((100% - 1200px) / 2));
 }
 
 .school-information-copy {
