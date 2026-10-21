@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../assets/icons/favicon.png" />
     <title>Bliv virksomhedspartner | Plastic Change</title>
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="../style/layout.css" />
@@ -28,7 +29,7 @@
     <main class="business-registration">
       <section class="business-registration-form" aria-labelledby="registration-title">
         <h1 id="registration-title">Bliv virksomhedspartner</h1>
-        <form action="tak-side.html" method="post">
+        <form>
           <label for="company-name">Virksomhedsnavn *</label>
           <input id="company-name" name="company-name" type="text" placeholder="Generic navn" required />
 
@@ -43,11 +44,11 @@
 
           <div class="business-registration-amount">
             <label for="amount">Støt med</label>
-            <input id="amount" name="amount" type="number" min="0" step="100" placeholder="fx.10000" />
+            <input id="amount" name="amount" type="number" placeholder="fx.10000" />
             <span>kr. per 100 kg skrald</span>
           </div>
 
-          <button type="submit">Bekræft</button>
+          <a class="business-registration-confirm" href="tak-side.html">Bekræft</a>
         </form>
       </section>
 
