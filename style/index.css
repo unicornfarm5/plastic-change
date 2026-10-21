@@ -166,6 +166,12 @@ Jeg turde ikke gøre/ændre noget i styles/layout css var bange for at ødelægg
   font-weight: 300;
 }
 
+.semibold-italic {
+  font-family: "Rubik", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
 .pink-button,
 .support-button {
   font-family: "Rubik", sans-serif;
