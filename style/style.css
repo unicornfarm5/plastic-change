@@ -711,7 +711,7 @@ address {
 .school-hero-image {
   background:
     linear-gradient(rgba(0, 40, 90, 0.08), rgba(0, 15, 55, 0.24)),
-    url("../assets/img/tilmeld-skole-hero.png") center / cover no-repeat;
+    url("../assets/img/tilmeld-skole-hero__.webp") center / cover no-repeat;
   height: 345px;
 }
 
